@@ -7,10 +7,16 @@ from helpers import apology
 import base64
 from werkzeug.exceptions import HTTPException
 
+from flask_session import Session
+
 
 app = Flask(__name__)
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 app.config['TEMPLATES_AUTO_RELOAD'] = True
+
+app.config["SESSION_PERMANENT"] = False
+app.config["SESSION_TYPE"] = "filesystem"
+Session(app)
 
 app.secret_key = os.urandom(24)
 
@@ -47,6 +53,7 @@ def handle_exception(e):
 # -------------------------- API REQUESTS ----------------------------
 @app.route("/")
 def home():
+    session.clear()
     return render_template('home.html')
 
 @app.route('/visualize')
