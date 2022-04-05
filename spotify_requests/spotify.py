@@ -47,7 +47,7 @@ CLIENT_SECRET = "c7845ba4d1894976bf1dcc5eeff85728"
 
 # CHANGE THIS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 REDIRECT_URI = "https://musicmapapp.herokuapp.com/callback/"
-SCOPE = "playlist-modify-public playlist-modify-private user-read-recently-played user-top-read"
+SCOPE = "user-read-recently-played user-top-read"
 STATE = ""
 SHOW_DIALOG_bool = True
 SHOW_DIALOG_str = str(SHOW_DIALOG_bool).lower()
