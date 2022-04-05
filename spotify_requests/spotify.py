@@ -46,7 +46,7 @@ CLIENT_SECRET = "c7845ba4d1894976bf1dcc5eeff85728"
 # your spotify dev account as well *
 
 # CHANGE THIS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-REDIRECT_URI = "http://127.0.0.1:5000/callback/"
+REDIRECT_URI = "https://musicmapapp.herokuapp.com/callback/"
 SCOPE = "playlist-modify-public playlist-modify-private user-read-recently-played user-top-read"
 STATE = ""
 SHOW_DIALOG_bool = True
