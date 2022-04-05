@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+  <div id="demobox"></div>
+    <h1 style="color: #2C1B14; padding-top: 8%; padding-bottom: 0%;">SPOTIFY MUSIC MAP</h1>
+    <div style="text-align: center; padding: 10%;">
+      <a href="{{ url_for('visualize') }}" type="button" class="btn btn-default">VISUALIZE</a>
+    </div>
+    <p class="description" style="color: #2C1B14">
+      CLICK VISUALIZE TO VIEW YOUR MAPPED OUT MUSIC TASTE!
+    </p>
+
+{% endblock %}
