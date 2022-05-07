@@ -1,1 +1,1 @@
-web: gunicorn app:app --preload --timeout 50
+web: gunicorn app:app --preload
